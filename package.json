@@ -1,0 +1,22 @@
+{
+  "name": "team2",
+  "version": "1.0.0",
+  "description": "Repo made for Accesa hackaton 2024 (team2)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "regression": "npx cypress run --headed --env allure=true --spec cypress/e2e/login.cy.js cypress/e2e/contact.cy.js, cypress/e2e/pricingTest.cy.js, cypress/e2e/watchMovie.cy.js, cypress/e2e/logout.cy.js",
+    "debug": "npx cypress run --headed --spec cypress/e2e/login.cy.js --env allure=true"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.8.0",
+    "cypress-mochawesome-reporter": "^3.8.2"
+  },
+  "dependencies": {
+    "@shelex/cypress-allure-plugin": "^2.40.2",
+    "allure-commandline": "^2.28.0",
+    "npm": "^10.5.2"
+  }
+}
